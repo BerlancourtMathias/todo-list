@@ -1,8 +1,13 @@
 import "./App.css";
 import Task from "./components/Task";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-library.add(faCircleCheck);
+import {
+  faCircleCheck,
+  faCircle,
+  faCircleDown,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faCircleCheck, faCircle, faCircleDown);
 
 const App = () => {
   return (
@@ -13,7 +18,9 @@ const App = () => {
       <Task />
 
       <footer>
-        Made with ⚛︎ at <b>Le Reacteur</b> by <b>Mathias</b>
+        <div>
+          Made with ⚛︎ at <b>Le Reacteur</b> by <b>Mathias</b>
+        </div>
       </footer>
     </div>
   );
