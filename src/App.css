@@ -13,12 +13,28 @@ h1 {
 }
 .main {
   height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-direction: column;
+}
+.body {
+  display: flex;
+  height: 10%;
+}
+.key {
+  height: 20%;
 }
 .crossed {
-  background-color: red;
+  text-decoration: line-through;
 }
-.NotCrossed {
-  background-color: green;
+.notCrossed {
+}
+.Delete {
+  height: 100%;
+}
+Add {
+  height: 100%;
 }
 #Add-task {
   border-radius: 10px;

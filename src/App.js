@@ -1,5 +1,8 @@
 import "./App.css";
 import Task from "./components/Task";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+library.add(faCircleCheck);
 
 const App = () => {
   return (
