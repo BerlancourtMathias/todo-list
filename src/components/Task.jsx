@@ -25,6 +25,16 @@ const Task = () => {
 
   return (
     <main className="main">
+      <button
+        className="Add"
+        type="submit"
+        id="Add-task"
+        onClick={() => {
+          handleClick("Add-task");
+        }}
+      >
+        Add task
+      </button>
       {task.map((elem, index) => (
         <div className="body" key={index}>
           <button
@@ -43,16 +53,6 @@ const Task = () => {
             value={task[index].toDisplay}
             onChange={handleToDisplayChange}
           ></input>
-          <button
-            className="Add"
-            type="submit"
-            id="Add-task"
-            onClick={() => {
-              handleClick("Add-task", index);
-            }}
-          >
-            Add task
-          </button>
         </div>
       ))}
     </main>
