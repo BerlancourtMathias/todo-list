@@ -56,7 +56,7 @@ const Task = () => {
             }}
             checked
           >
-            <div className="icon">{elem.deleted ? "✅" : "☑️"}</div>
+            <div className="icon">{elem.deleted ? "☑︎" : "◻︎"}</div>
           </button>
           <input
             className={elem.deleted ? "crossed" : "notCrossed"}
